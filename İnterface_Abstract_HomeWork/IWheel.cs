@@ -2,6 +2,6 @@
 {
     internal interface IWheel
     {
-        public int WheelThickness { get; set; }
+        public int WheelThickness { get; init; }
     }
 }

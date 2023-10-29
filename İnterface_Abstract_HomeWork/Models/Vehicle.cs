@@ -2,13 +2,13 @@
 
 internal abstract class Vehicle 
 { 
-    public int DriveTime { get; set; }
-    public int DrivePath { get; set; }
+    public int DriveTime { get; init; }
+    public int DrivePath { get; init; }
     public string IdCode { get; set; }
 
-    public void AverageSpeed() 
+    public float AverageSpeed() 
     {
-        Console.WriteLine(DrivePath / DriveTime);
+        return (DrivePath / DriveTime);
     }
     
    

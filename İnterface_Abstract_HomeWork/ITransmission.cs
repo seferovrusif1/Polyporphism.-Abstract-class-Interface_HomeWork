@@ -2,5 +2,5 @@
 
 internal interface ITransmission
 {
-    public string TransmissionKind { get; set; }
+    public string TransmissionKind { get;   init; }
 }

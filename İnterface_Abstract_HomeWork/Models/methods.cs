@@ -1,4 +1,6 @@
-﻿namespace İnterface_Abstract_HomeWork.Models;
+﻿using System.Reflection.Emit;
+
+namespace İnterface_Abstract_HomeWork.Models;
 
 internal class methods
 {
@@ -9,15 +11,14 @@ internal class methods
         Array.Resize(ref Vehicles, Vehicles.Length + 1);   //Resize eledik arrayi +1 uzunluqa getirdik
         Vehicles[Vehicles.Length - 1] = vehc;            //sonuncu indexe yeni obyekti add eledik
 
-        Console.WriteLine("\nVehicle Aded\n");
+        Console.WriteLine("Vehicle Aded\n");
     }
 
-    public void RemoveUser(string idCode)
+    public void RemoveVehicle(string idCode)
     {
-        bool _isfound = false;
-
-        //_isfound = false;     //eger tapilmasa consola mesaj vermek ucun isledeceyik
-        for (int j = 0; j < Vehicles.Length; j++)
+        bool _isfound = false;    //eger tapilmasa consola mesaj vermek ucun isledeceyik
+        
+        for (int j = 0; j < Vehicles.Length && _isfound==false; j++)
         {
             if (Vehicles[j].IdCode == idCode)
             {
@@ -48,43 +49,76 @@ internal class methods
         }
     }
 
-
-    public void GetInfo(Vehicle vehc) 
+    public void GetAllCarsId()
     {
-        if (vehc is Car c)
+        foreach (var item in Vehicles)
         {
-            Console.WriteLine(
-$@"Car:
+            Console.WriteLine(item.IdCode);
+        }
+    }
+    public void GetInfo(string idCode)
+    {
+        bool _isfound = false;
+
+        //_isfound = false;     //eger tapilmasa consola mesaj vermek ucun isledeceyik
+        for (int j = 0; j < Vehicles.Length; j++)
+        {
+            if (Vehicles[j].IdCode == idCode)
+            {
+                _isfound = true;
+
+                if (Vehicles[j] is Car c)
+                {
+                    Console.WriteLine(
+        $@"Car:
 Vehicle ID:       {c.IdCode}
-HorsePower:       {c.HorsePower}
-DoorCount:        {c.DoorCount}
+Drive Path:       {c.DrivePath} KM
+Drive Time:       {c.DriveTime} saat
+HorsePower:       {c.HorsePower} at gucu
+DoorCount:        {c.DoorCount} eded
 WinCode:          {c.WinCode}
-WheelThickness:   {c.WheelThickness}
+WheelThickness:   {c.WheelThickness} sm
 TransmissionKind: {c.TransmissionKind}
-TankSize:         {c.TankSize}
-CurrentOil:       {c.CurrentOil}
-FuelType:         {c.FuelType}");
-        }
-        else if (vehc is Plane p)
-        {
-            Console.WriteLine(
-$@"Plane:
+TankSize:         {c.TankSize} l
+CurrentOil:       {c.CurrentOil} l
+FuelType:         {c.FuelType}
+AverageSpeed:     {c.AverageSpeed()} Km/S
+");
+                }
+                else if (Vehicles[j] is Plane p)
+                {
+                    Console.WriteLine(
+        $@"Plane:
 Vehicle ID:       {p.IdCode}
-Wing Lenth:       {p.WingLenth}
-HorsePower:       {p.HorsePower}
-TankSize:         {p.TankSize}
-CurrentOil:       {p.CurrentOil}
-FuelType:         {p.FuelType}");
-        }
-        else if (vehc is Bicycle b)
-        {
-            Console.WriteLine(
-$@"Bicycle:
+Drive Path:       {p.DrivePath} KM
+Drive Time:       {p.DriveTime} saat
+Wing Lenth:       {p.WingLenth} sm
+HorsePower:       {p.HorsePower} at gucu
+TankSize:         {p.TankSize} l
+CurrentOil:       {p.CurrentOil} l
+FuelType:         {p.FuelType}
+AverageSpeed:     {p.AverageSpeed()} Km/S
+");
+                }
+                else if (Vehicles[j] is Bicycle b)
+                {
+                    Console.WriteLine(
+        $@"Bicycle:
 Vehicle ID:        {b.IdCode}
+Drive Path:       {b.DrivePath} KM
+Drive Time:       {b.DriveTime} saat
 Pedal Kind:        {b.PedalKind} 
-Wheel Thickness:   {b.WheelThickness}
-Transmission Kind: {b.TransmissionKind}");
+Wheel Thickness:   {b.WheelThickness} sm
+Transmission Kind: {b.TransmissionKind}
+AverageSpeed:      {b.AverageSpeed()} Km/S
+");
+                }
+            }
         }
+                if (!_isfound)
+                {
+                    Console.WriteLine("Istifadechi tapilmadi!");
+                }
     }
 
 }

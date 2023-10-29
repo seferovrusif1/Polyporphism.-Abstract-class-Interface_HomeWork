@@ -3,9 +3,9 @@
 
 internal class Bicycle : Vehicle, ITransmission, IWheel
 {
-    public string PedalKind { get; set; }
-    public string TransmissionKind { get; set; }
-    public int WheelThickness { get; set; }
+    public string PedalKind { get; init; }
+    public string TransmissionKind { get; init; }
+    public int WheelThickness { get; init; }
 
     
 }

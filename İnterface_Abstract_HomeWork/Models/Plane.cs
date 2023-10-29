@@ -3,11 +3,11 @@
 internal class Plane: Vehicle,IEngine
 {
 
-    public float WingLenth { get; set; }
-    public float HorsePower { get; set; }
-    public float TankSize { get; set; }
+    public float WingLenth { get; init; }
+    public float HorsePower { get;  init; }
+    public float TankSize { get; init; }
     public float CurrentOil { get; set; }
-    public string FuelType { get; set; }
+    public string FuelType { get; init; }
 
    
 
