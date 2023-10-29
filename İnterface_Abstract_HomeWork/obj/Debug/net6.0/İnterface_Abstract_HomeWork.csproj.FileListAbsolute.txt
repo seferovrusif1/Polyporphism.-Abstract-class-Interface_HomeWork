@@ -1,0 +1,14 @@
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\bin\Debug\net6.0\İnterface_Abstract_HomeWork.exe
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\bin\Debug\net6.0\İnterface_Abstract_HomeWork.deps.json
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\bin\Debug\net6.0\İnterface_Abstract_HomeWork.runtimeconfig.json
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\bin\Debug\net6.0\İnterface_Abstract_HomeWork.dll
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\bin\Debug\net6.0\İnterface_Abstract_HomeWork.pdb
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\İnterface_Abstract_HomeWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\İnterface_Abstract_HomeWork.AssemblyInfoInputs.cache
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\İnterface_Abstract_HomeWork.AssemblyInfo.cs
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\İnterface_Abstract_HomeWork.csproj.CoreCompileInputs.cache
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\İnterface_Abstract_HomeWork.dll
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\refint\İnterface_Abstract_HomeWork.dll
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\İnterface_Abstract_HomeWork.pdb
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\İnterface_Abstract_HomeWork.genruntimeconfig.cache
+C:\Users\sefer\OneDrive\Desktop\İnterface_Abstract_HomeWork\İnterface_Abstract_HomeWork\obj\Debug\net6.0\ref\İnterface_Abstract_HomeWork.dll
